@@ -125,7 +125,15 @@ void toLowerCase_ShouldGenerateTheExpectedLowercaseValue(String input, String ex
 
 
 
+### 4장 테스트 조직
 
+#### private 메소드를 테스트 해야 하는가
+
+- private 메서드를 사용하는 public 클래스를 테스트 하는 것으로 충분하다.
+- 내부 행위를 테스트 하려는 충동이 든다면 설계에 문제가 있다.
+- SRP를 어기는 지 한번 확인 해 볼 것
+  - SRP는 어떤 클래스가 작고 단일 목적을 가져야 함을 의미
+  - 가장 좋은 해결 책은 private메서드를 추출하여 다른 클래스로 이동하는 것이다.
 
 
 
